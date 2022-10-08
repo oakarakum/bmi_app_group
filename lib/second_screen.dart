@@ -1,10 +1,22 @@
+// ignore_for_file: unnecessary_import, implementation_imports
 // ignore_for_file: prefer_const_constructors
-
+import 'dart:ui';
+import 'package:bmi_app_group/first_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/material.dart';
+
 class SecondScreen extends StatefulWidget {
-  const SecondScreen({super.key});
+  final String bmiC;
+  final String cond;
+  final String adv;
+  final Image ftp;
+  const SecondScreen(
+      {super.key,
+      required this.bmiC,
+      required this.cond,
+      required this.adv,
+      required this.ftp});
 
   @override
   State<SecondScreen> createState() => _SecondScreenState();
@@ -24,7 +36,6 @@ class _SecondScreenState extends State<SecondScreen> {
               width: double.infinity,
               color: Colors.blueAccent,
               child: Column(
-                // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   SizedBox(height: 20),
                   Text(
@@ -33,21 +44,21 @@ class _SecondScreenState extends State<SecondScreen> {
                   ),
                   SizedBox(height: 20),
                   Text(
-                    "placeholder",
+                    widget.bmiC,
                     style: TextStyle(
                         color: Colors.green,
                         fontSize: 45,
                         fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 15),
-                  Text("placeholder", style: TextStyle(fontSize: 20)),
+                  Text(widget.cond, style: TextStyle(fontSize: 20)),
                   SizedBox(height: 15),
-                  Text("placeholder", style: TextStyle(fontSize: 20)),
+                  Text(widget.adv, style: TextStyle(fontSize: 20)),
                   SizedBox(height: 10.6),
                   SizedBox(
                     height: 100,
                     width: 100,
-                    child: Text("placeholder", style: TextStyle(fontSize: 20)),
+                    child: widget.ftp,
                   )
                 ],
               ),
@@ -67,7 +78,6 @@ class _SecondScreenState extends State<SecondScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       Icon(Icons.restart_alt, color: Colors.white, size: 18),
                       SizedBox(width: 7),

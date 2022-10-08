@@ -49,16 +49,16 @@ class CalculateResult {
           "https://www.ameliyat.com/lib/images/veriler/hastaliklar/287527anoreksiya-hastaligi-ghksg7ksyottsi8vtjcf.webp");
     } else if (BMI >= 18.5 && BMI <= 24.9) {
       return Image.network(
-          "https://magnethastanesi.com.tr/wp-content/uploads/2022/01/beslenme-ve-diyet-doktoru-1.jpg");
+          "https://hthayat.haberturk.com/im/2016/12/20/ver1653164008/1043395_620x360.jpg");
     } else if (BMI >= 25 && BMI <= 29.9) {
       return Image.network(
-          "https://www.ameliyat.com/lib/images/veriler/hastaliklar/287527anoreksiya-hastaligi-ghksg7ksyottsi8vtjcf.webp");
+          "https://media.istockphoto.com/photos/fat-man-does-not-wear-a-shirtoverweight-man-trying-on-cloth-on-white-picture-id1067307700");
     } else if (BMI >= 30 && BMI <= 39.9) {
       return Image.network(
-          "https://fscomps.fotosearch.com/compc/CSP/CSP992/%C5%9Fi%C5%9Fman-adam-ile-l%C3%A2-notasi-g%C3%B6bek-haz%C4%B1r-g%C3%B6r%C3%BCnt%C3%BC__k14448570.jpg");
+          "https://st2.depositphotos.com/1985863/6080/v/950/depositphotos_60802677-stock-illustration-fat-man.jpg");
     } else {
       return Image.network(
-          "https://dilaverajder.com/wp-content/uploads/2014/04/sisman.jpg");
+          "https://static9.depositphotos.com/1000647/1179/i/950/depositphotos_11796201-stock-photo-fat-man-eating-hamburger.jpg");
     }
   }
 }
